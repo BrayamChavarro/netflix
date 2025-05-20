@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Glassmorphism</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar-logo">NETFLIX</div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#" class="active" data-target="home"><span class="icon">🏠</span> Home</a></li>
+        <li><a href="#" data-target="my-list"><span class="icon">📃</span> My List</a></li>
+        <li><a href="#" data-target="favorites"><span class="icon"><i class="fa-solid fa-heart"></i></span> Favorites</a></li>
+        <li><a href="#"><span class="icon">🔔</span> Notifications</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-section">
+      <span class="sidebar-section-title">Who's watching?</span>
+      <ul class="sidebar-users">
+        <li><img class="profile-pic" src="assets/images/perfiles/p1.png" alt="Harshita"><span class="user user-active">Harshita</span></li>
+        <li><img class="profile-pic" src="assets/images/perfiles/p2.png" alt="Megha"><span class="user">Megha</span></li>
+        <li><img class="profile-pic" src="assets/images/perfiles/p3.png" alt="Abeera"><span class="user">Abeera</span></li>
+        <li><img class="profile-pic" src="assets/images/perfiles/p4.png" alt="Gauri"><span class="user">Gauri</span></li>
+        <li><img class="profile-pic" src="assets/images/perfiles/p5.png" alt="Jay"><span class="user">Jay</span></li>
+      </ul>
+    </div>
+    <nav class="sidebar-nav sidebar-bottom">
+      <ul>
+        <li><a href="#"><span class="icon">⚙️</span> Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="main-content">
+    <section class="hero">
+      <div class="hero-info">
+        <span class="netflix-n">N SERIES</span>
+        <h1>BIOHACKERS</h1>
+        <p>A medical student enters a top German university on a secret mission to uncover a conspiracy linking a family tragedy to a visionary biology professor</p>
+        <div class="hero-actions">
+          <button class="play">▶ Play</button>
+          <button class="info">More Info</button>
+          <button class="save-main" data-id="biohackers" data-title="BIOHACKERS" data-img="assets/images/bio-hackers.png">+ My List</button>
+          <button class="favorite-main" data-id="biohackers" data-title="BIOHACKERS" data-img="assets/images/bio-hackers.png"><i class="fa-regular fa-heart"></i></button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/bio-hackers.png" alt="Biohackers" style="width:100%;border-radius:18px;box-shadow:0 4px 24px 0 rgba(31,38,135,0.10);">
+      </div>
+    </section>
+    
+    <div id="home-content">
+      <section class="cards-row">
+        <h2>Popular on Netflix</h2>
+        <div class="cards-list">
+          <div class="card" data-id="stranger-things" data-title="STRANGER THINGS">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/stranger-things.png">
+            <span>STRANGER THINGS</span>
+          </div>
+          <div class="card" data-id="umbrella-academy" data-title="THE UMBRELLA ACADEMY">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/the-umbrella-academy.png">
+            <span>THE UMBRELLA ACADEMY</span>
+          </div>
+          <div class="card" data-id="black-mirror" data-title="BLACK MIRROR">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/black-mirror.png">
+            <span>BLACK MIRROR</span>
+          </div>
+          <div class="card" data-id="dark" data-title="DARK">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/dark.png">
+            <span>DARK</span>
+          </div>
+          <div class="card" data-id="stranger-things-2" data-title="STRANGER THINGS 2">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/stranger-things.png">
+            <span>STRANGER THINGS 2</span>
+          </div>
+          <div class="card" data-id="umbrella-academy-2" data-title="THE UMBRELLA ACADEMY 2">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/the-umbrella-academy.png">
+            <span>THE UMBRELLA ACADEMY 2</span>
+          </div>
+          <div class="card" data-id="black-mirror-2" data-title="BLACK MIRROR 2">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/black-mirror.png">
+            <span>BLACK MIRROR 2</span>
+          </div>
+          <div class="card" data-id="dark-2" data-title="DARK 2">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/dark.png">
+            <span>DARK 2</span>
+          </div>
+          <div class="card" data-id="stranger-things-3" data-title="STRANGER THINGS 3">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/stranger-things.png">
+            <span>STRANGER THINGS 3</span>
+          </div>
+          <div class="card" data-id="umbrella-academy-3" data-title="THE UMBRELLA ACADEMY 3">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/the-umbrella-academy.png">
+            <span>THE UMBRELLA ACADEMY 3</span>
+          </div>
+          <div class="card" data-id="black-mirror-3" data-title="BLACK MIRROR 3">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/black-mirror.png">
+            <span>BLACK MIRROR 3</span>
+          </div>
+          <div class="card" data-id="dark-3" data-title="DARK 3">
+            <button class="card-save">+</button>
+            <button class="card-favorite"><i class="fa-regular fa-heart"></i></button>
+            <img src="assets/images/dark.png">
+            <span>DARK 3</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="my-list-content" class="my-list-container">
+      <h2>My List</h2>
+      <div class="cards-list" id="saved-list">
+        <!-- Aquí se mostrarán los elementos guardados -->
+        <div class="no-items">No items saved to your list yet</div>
+      </div>
+    </section>
+
+    <section id="favorites-content" class="favorites-container">
+      <h2>Favorites</h2>
+      <div class="cards-list" id="favorites-list">
+        <!-- Aquí se mostrarán los favoritos -->
+        <div class="no-items">No favorites added yet</div>
+      </div>
+    </section>
+  </div>
+  <div class="vertical-nav-blur">
+    <div class="scroll-indicator"></div>
+  </div>
+  <div class="notification" id="save-notification">Added to My List</div>
+  <script src="js/main.js"></script>
+</body>
+</html> 
