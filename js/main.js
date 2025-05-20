@@ -13,10 +13,33 @@ document.addEventListener('DOMContentLoaded', function() {
     const saveMainButton = document.querySelector('.save-main');
     const favoriteMainButton = document.querySelector('.favorite-main');
     const notification = document.getElementById('save-notification');
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
     
     // Cargar lista guardada y favoritos del localStorage
     let savedItems = JSON.parse(localStorage.getItem('myList')) || [];
     let favoriteItems = JSON.parse(localStorage.getItem('favorites')) || [];
+    
+    // Controlador para el menú móvil
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('show');
+        });
+        
+        // Cerrar el menú al hacer clic en un enlace
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('show');
+            });
+        });
+        
+        // Cerrar el menú al hacer clic fuera de él
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.sidebar-nav') && !event.target.closest('.mobile-menu-toggle')) {
+                navMenu.classList.remove('show');
+            }
+        });
+    }
     
     // Función para mostrar notificación
     function showNotification(message) {
