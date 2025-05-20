@@ -256,8 +256,23 @@ body {
   transition: background 0.2s, color 0.2s;
 }
 
+.sidebar-nav .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+
+.sidebar-nav .icon i {
+  font-size: 1rem;
+}
+
 .sidebar-nav a.active, .sidebar-nav a:hover {
   background: rgba(255,255,255,0.13);
+  color: #e50914;
+}
+
+.sidebar-nav a.active .icon i, .sidebar-nav a:hover .icon i {
   color: #e50914;
 }
 
